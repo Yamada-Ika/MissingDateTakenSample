@@ -5,6 +5,7 @@ import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -66,6 +67,7 @@ fun MainScreen(
                 when (item) {
                     is ItemUiState.Media -> {
                         MediaImage(
+                            modifier = Modifier.aspectRatio(1f),
                             uri = item.uri,
                         )
                     }
