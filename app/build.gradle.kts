@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.yamadaika.missingdatetakensample"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.yamadaika.missingdatetakensample"
